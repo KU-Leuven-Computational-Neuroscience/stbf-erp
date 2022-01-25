@@ -2,7 +2,7 @@ import os
 import mne
 
 study_name = 'STBF-ERP_CORE'
-bids_root = os.path.join(mne.get_config('MNE_DATA'), 'ERP_CORE')
+bids_root = os.path.join(mne.get_config('MNE_DATA'), 'ERP_CORE_BIDS_Raw_Files')
 deriv_root = os.path.join(mne.get_config('MNE_DATA'), 'derivatives', 'mne-bids-pipeline', 'STBF-ERP_CORE')
 
 task = 'P3'
