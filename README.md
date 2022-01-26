@@ -8,10 +8,12 @@ and [MNE-BIDS-Pipeline](https://mne.tools/mne-bids-pipeline/).
 A comparative classifier [5] is implemented with [pyRiemann](https://pyriemann.readthedocs.io/en/latest/index.html)
 
 ## Installation
-First, clone this git repository and change to its directory.
 ```shell
+git clone https://github.com/kul-compneuro/stbf-erp.git --recurse-submodules
+cd stbf-erp
 virtualenv -p python3 .venv
 source .venv/bin/activate
+pip install -r preprocessing/mne_bids_pipeline/requirements.txt
 pip install -r requirements.txt
 ```
 
@@ -29,7 +31,7 @@ preprocessing/mne_bids_pipeline/run.py --config preprocessing/erp_core_P3.py
 
 [1] Van Den Kerchove, A.; Libert, A.; Wittevrongel, B.; Van Hulle, M.M.
 Classification of Event-Related Potentials with Regularized Spatiotemporal LCMV Beamforming.
-Appl. Sci. 2022,
+
 
 [2] Gramfort, A.; Luessi, M.; Larson, E.; Engemann, D.A.; Strohmeier, D.; Brodbeck, C.; Goj, R.; Jas, M.; Brooks, T.; Parkkonen, L.; 553
 et al. MEG and EEG Data Analysis with MNE-Python. Frontiers in Neuroscience 2013, 7, 1–13. doi:10.3389/fnins.2013.00267.
