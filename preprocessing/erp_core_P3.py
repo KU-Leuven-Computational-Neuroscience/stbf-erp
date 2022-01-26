@@ -8,8 +8,8 @@ deriv_root = os.path.join(mne.get_config('MNE_DATA'), 'derivatives', 'mne-bids-p
 task = 'P3'
 sessions = [task]
 
-#subjects = ['001', '002', '003']
-subjects = ['{:03d}'.format(s+1) for s in range(40)]
+subjects = ['001', '002', '003']
+#subjects = ['{:03d}'.format(s+1) for s in range(40)]
 
 ch_types = ['eeg']
 interactive = False
